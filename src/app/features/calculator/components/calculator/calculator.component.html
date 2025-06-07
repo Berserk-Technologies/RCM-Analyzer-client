@@ -1,0 +1,1184 @@
+<div class="w-full min-h-screen font-sans leading-relaxed text-slate-800" style="background: radial-gradient(ellipse 100% 60% at 50% 15%, #B8E6FF 0%, #87CEEB 8%, #6BB6FF 15%, #5ea2e1 22%, #4A90E2 28%, #3B7DD8 34%, #2E6BC7 40%, #2159B6 46%, #1A4BA5 52%, #153D94 58%, #122F83 64%, #0F2172 70%, #0C1A61 76%, #091350 82%, #060C3F 88%, #03052E 94%, #000000 100%), radial-gradient(ellipse 150% 100% at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 40%, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0.8) 90%, rgba(0,0,0,1) 100%), linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 20%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.5) 60%, rgba(0,0,0,0.7) 75%, rgba(0,0,0,0.9) 90%, rgba(0,0,0,1) 100%);">
+  <div class="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
+    <!-- Left Side -->
+    <div class="min-h-screen bg-transparent">
+
+      <!-- Content Container -->
+      <div class="max-w-xl mx-auto h-full flex flex-col justify-start pt-6 px-6 min-h-screen">
+        <!-- Hero Section -->
+        <div class="mb-6 animate-fade-in">
+            <!-- Brand Name -->
+          <div class="mb-5 text-center relative">
+            <!-- Animated background glow -->
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 via-purple-600/20 to-pink-600/20 rounded-3xl blur-3xl animate-pulse"></div>
+
+            <div class="relative">
+              <h1 class="text-4xl font-black mb-3 text-white animate-slide-down bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent"
+                  style="text-shadow: 0 0 40px rgba(59, 130, 246, 0.6), 0 0 80px rgba(147, 51, 234, 0.3); filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));">
+              MedClaimPro
+              </h1>
+              <h2 class="text-lg font-bold text-white/90 mb-3 animate-slide-up animate-delay-200 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                Medical Claims Analytics Platform
+              </h2>
+              <p class="text-white/80 text-sm max-w-sm mx-auto leading-snug animate-fade-in animate-delay-400">
+                Enterprise-grade revenue cycle optimization powered by AI
+              </p>
+            </div>
+            </div>
+          </div>
+
+          <!-- Key Metrics Row -->
+        <div class="grid grid-cols-3 gap-3 mb-5 animate-fade-in animate-delay-600">
+            <!-- Accuracy Rate Card -->
+          <div class="relative group bg-gradient-to-br from-white/20 via-white/10 to-transparent backdrop-blur-xl rounded-xl p-4 text-center hover:from-white/25 hover:via-white/15 transition-all duration-500 transform hover:scale-110 hover:-translate-y-1 border border-white/20 overflow-hidden"
+               style="box-shadow: 0 10px 40px rgba(59, 130, 246, 0.15), inset 0 1px 0 rgba(255,255,255,0.2);">
+            <!-- Animated background -->
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="relative z-10">
+              <div class="text-2xl font-black text-white mb-1 animate-pulse" style="text-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.3);">
+                {{ accuracyRate }}%
+              </div>
+              <div class="text-xs text-white/90 font-bold tracking-wide">
+                Accuracy Rate
+              </div>
+            </div>
+          </div>
+
+            <!-- Revenue Card -->
+          <div class="relative group bg-gradient-to-br from-white/20 via-white/10 to-transparent backdrop-blur-xl rounded-xl p-4 text-center hover:from-white/25 hover:via-white/15 transition-all duration-500 transform hover:scale-110 hover:-translate-y-1 border border-white/20 overflow-hidden"
+               style="box-shadow: 0 10px 40px rgba(34, 197, 94, 0.15), inset 0 1px 0 rgba(255,255,255,0.2);">
+            <!-- Animated background -->
+            <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/10 to-green-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div class="relative z-10">
+              <div class="text-2xl font-black text-white mb-1 animate-pulse" style="text-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.3);">
+                ${{ revenueAmount }}M
+              </div>
+              <div class="text-xs text-white/90 font-bold tracking-wide">
+                Revenue Optimized
+              </div>
+            </div>
+          </div>
+
+            <!-- Partners Card -->
+          <div class="relative group bg-gradient-to-br from-white/20 via-white/10 to-transparent backdrop-blur-xl rounded-xl p-4 text-center hover:from-white/25 hover:via-white/15 transition-all duration-500 transform hover:scale-110 hover:-translate-y-1 border border-white/20 overflow-hidden"
+               style="box-shadow: 0 10px 40px rgba(168, 85, 247, 0.15), inset 0 1px 0 rgba(255,255,255,0.2);">
+            <!-- Animated background -->
+            <div class="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div class="relative z-10">
+              <div class="text-2xl font-black text-white mb-1 animate-pulse" style="text-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.3);">
+                {{ partnerCount }}+
+              </div>
+              <div class="text-xs text-white/90 font-bold tracking-wide">
+                Healthcare Partners
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <!-- Features Grid -->
+        <div class="grid grid-cols-2 gap-2 mb-4 animate-fade-in animate-delay-800">
+          <div class="group relative bg-gradient-to-br from-white/15 via-white/10 to-white/5 backdrop-blur-xl border border-white/30 rounded-lg p-3 flex items-center gap-2 hover:from-white/20 hover:via-white/15 hover:to-white/10 transition-all duration-500 transform hover:scale-105 hover:-translate-y-0.5 overflow-hidden"
+               style="box-shadow: 0 6px 20px rgba(59, 130, 246, 0.12), inset 0 1px 0 rgba(255,255,255,0.15);">
+            <!-- Animated glow -->
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-transparent to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div class="relative w-6 h-6 bg-gradient-to-br from-blue-500/30 to-cyan-500/30 rounded-lg flex items-center justify-center flex-shrink-0 border border-blue-400/40 group-hover:scale-110 transition-transform duration-300">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2.5">
+                  <polyline points="22,12 18,12 15,21 9,3 6,12 2,12" />
+                </svg>
+              </div>
+            <span class="text-xs font-bold text-white/95 relative z-10">Real-time Processing</span>
+            </div>
+
+          <div class="group relative bg-gradient-to-br from-white/15 via-white/10 to-white/5 backdrop-blur-xl border border-white/30 rounded-lg p-3 flex items-center gap-2 hover:from-white/20 hover:via-white/15 hover:to-white/10 transition-all duration-500 transform hover:scale-105 hover:-translate-y-0.5 overflow-hidden"
+               style="box-shadow: 0 6px 20px rgba(168, 85, 247, 0.12), inset 0 1px 0 rgba(255,255,255,0.15);">
+            <!-- Animated glow -->
+            <div class="absolute inset-0 bg-gradient-to-r from-purple-500/10 via-transparent to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div class="relative w-6 h-6 bg-gradient-to-br from-purple-500/30 to-pink-500/30 rounded-lg flex items-center justify-center flex-shrink-0 border border-purple-400/40 group-hover:scale-110 transition-transform duration-300">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2.5">
+                  <path d="M9 19c-5 0-8-3-8-8s3-8 8-8 8 3 8 8-3 8-8 8" />
+                  <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                  <line x1="9" y1="9" x2="9.01" y2="9" />
+                  <line x1="15" y1="9" x2="15.01" y2="9" />
+                </svg>
+              </div>
+            <span class="text-xs font-bold text-white/95 relative z-10">Industry Benchmarks</span>
+            </div>
+
+          <div class="group relative bg-gradient-to-br from-white/15 via-white/10 to-white/5 backdrop-blur-xl border border-white/30 rounded-lg p-3 flex items-center gap-2 hover:from-white/20 hover:via-white/15 hover:to-white/10 transition-all duration-500 transform hover:scale-105 hover:-translate-y-0.5 overflow-hidden"
+               style="box-shadow: 0 6px 20px rgba(34, 197, 94, 0.12), inset 0 1px 0 rgba(255,255,255,0.15);">
+            <!-- Animated glow -->
+            <div class="absolute inset-0 bg-gradient-to-r from-emerald-500/10 via-transparent to-green-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div class="relative w-6 h-6 bg-gradient-to-br from-emerald-500/30 to-green-500/30 rounded-lg flex items-center justify-center flex-shrink-0 border border-emerald-400/40 group-hover:scale-110 transition-transform duration-300">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.5">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                  <circle cx="12" cy="16" r="1" />
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                </svg>
+              </div>
+            <span class="text-xs font-bold text-white/95 relative z-10">HIPAA Compliant</span>
+            </div>
+
+          <div class="group relative bg-gradient-to-br from-white/15 via-white/10 to-white/5 backdrop-blur-xl border border-white/30 rounded-lg p-3 flex items-center gap-2 hover:from-white/20 hover:via-white/15 hover:to-white/10 transition-all duration-500 transform hover:scale-105 hover:-translate-y-0.5 overflow-hidden"
+               style="box-shadow: 0 6px 20px rgba(239, 68, 68, 0.12), inset 0 1px 0 rgba(255,255,255,0.15);">
+            <!-- Animated glow -->
+            <div class="absolute inset-0 bg-gradient-to-r from-red-500/10 via-transparent to-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div class="relative w-6 h-6 bg-gradient-to-br from-red-500/30 to-orange-500/30 rounded-lg flex items-center justify-center flex-shrink-0 border border-red-400/40 group-hover:scale-110 transition-transform duration-300">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#f87171" stroke-width="2.5">
+                <path d="M12 1v6m0 6v6m6-7h-6m-6 0h6" />
+                </svg>
+              </div>
+            <span class="text-xs font-bold text-white/95 relative z-10">Revenue Recovery</span>
+            </div>
+          </div>
+
+          <!-- Auto-Sliding Testimonials -->
+        <div class="relative bg-gradient-to-br from-white/15 via-white/10 to-white/5 backdrop-blur-xl border border-white/30 rounded-xl p-3 mb-3 animate-fade-in animate-delay-1000 overflow-hidden group hover:from-white/20 hover:via-white/15 hover:to-white/10 transition-all duration-500"
+             style="box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15), 0 0 30px rgba(59, 130, 246, 0.08), inset 0 1px 0 rgba(255,255,255,0.15);">
+          <!-- Animated background -->
+          <div class="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-purple-500/5 to-pink-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+          <!-- Testimonial Header -->
+          <div class="text-center mb-2 relative z-10">
+            <h3 class="text-white font-bold text-sm mb-1 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Client Reviews</h3>
+            <div class="w-8 h-px bg-gradient-to-r from-blue-400 to-purple-500 rounded-full mx-auto"></div>
+          </div>
+
+          <div class="testimonial-slider relative min-h-[75px]">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-slide flex items-start gap-2 absolute inset-0 transition-all duration-1000 ease-in-out opacity-100 translate-x-0">
+              <div class="w-8 h-8 bg-gradient-to-br from-blue-500 via-blue-600 to-purple-700 rounded-lg flex items-center justify-center text-white font-bold text-xs flex-shrink-0 shadow-md border border-white/20">
+                SJ
+              </div>
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-0.5 mb-1">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24" stroke="none">
+                      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                    </svg>
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24" stroke="none">
+                      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                    </svg>
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24" stroke="none">
+                      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                    </svg>
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24" stroke="none">
+                      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                    </svg>
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24" stroke="none">
+                      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                    </svg>
+                    <span class="text-yellow-400 text-2xs font-bold ml-1">5.0</span>
+                  </div>
+                  <blockquote class="text-white/95 mb-1 leading-tight font-medium text-xs italic truncate">
+                    "Revenue increased 28% in 6 months with optimized processing."
+                </blockquote>
+                  <div>
+                    <cite class="text-white font-bold not-italic text-xs">Dr. Sarah Johnson</cite>
+                    <div class="text-white/70 font-medium text-2xs truncate">Family Health Partners</div>
+                    </div>
+                  </div>
+              </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-slide flex items-start gap-2 absolute inset-0 transition-all duration-1000 ease-in-out opacity-0 translate-x-full">
+              <div class="w-8 h-8 bg-gradient-to-br from-emerald-500 via-green-600 to-teal-700 rounded-lg flex items-center justify-center text-white font-bold text-xs flex-shrink-0 shadow-md border border-white/20">
+                  MC
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-0.5 mb-1">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24" stroke="none">
+                      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                    </svg>
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24" stroke="none">
+                      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                    </svg>
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24" stroke="none">
+                      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                    </svg>
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24" stroke="none">
+                      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                    </svg>
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24" stroke="none">
+                      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                    </svg>
+                    <span class="text-yellow-400 text-2xs font-bold ml-1">5.0</span>
+                  </div>
+                  <blockquote class="text-white/95 mb-1 leading-tight font-medium text-xs italic truncate">
+                    "65% faster processing, 40% fewer denials. AI insights are game-changing."
+                  </blockquote>
+                  <div>
+                    <cite class="text-white font-bold not-italic text-xs">Dr. Michael Chen</cite>
+                    <div class="text-white/70 font-medium text-2xs truncate">Metro Healthcare Group</div>
+                </div>
+                </div>
+              </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-slide flex items-start gap-2 absolute inset-0 transition-all duration-1000 ease-in-out opacity-0 translate-x-full">
+              <div class="w-8 h-8 bg-gradient-to-br from-purple-500 via-pink-600 to-rose-700 rounded-lg flex items-center justify-center text-white font-bold text-xs flex-shrink-0 shadow-md border border-white/20">
+                  RP
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-0.5 mb-1">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24" stroke="none">
+                      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                    </svg>
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24" stroke="none">
+                      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                    </svg>
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24" stroke="none">
+                      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                    </svg>
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24" stroke="none">
+                      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                    </svg>
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24" stroke="none">
+                      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                    </svg>
+                    <span class="text-yellow-400 text-2xs font-bold ml-1">5.0</span>
+                  </div>
+                  <blockquote class="text-white/95 mb-1 leading-tight font-medium text-xs italic truncate">
+                    "96% collection rate achieved with streamlined billing process."
+                  </blockquote>
+                  <div>
+                    <cite class="text-white font-bold not-italic text-xs">Dr. Rachel Patel</cite>
+                    <div class="text-white/70 font-medium text-2xs truncate">Advanced Medical Solutions</div>
+              </div>
+            </div>
+          </div>
+
+            <!-- Testimonial 4 -->
+            <div class="testimonial-slide flex items-start gap-2 absolute inset-0 transition-all duration-1000 ease-in-out opacity-0 translate-x-full">
+              <div class="w-8 h-8 bg-gradient-to-br from-orange-500 via-red-600 to-pink-700 rounded-lg flex items-center justify-center text-white font-bold text-xs flex-shrink-0 shadow-md border border-white/20">
+                  DL
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-0.5 mb-1">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24" stroke="none">
+                      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+              </svg>
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24" stroke="none">
+                      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+              </svg>
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24" stroke="none">
+                      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                    </svg>
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24" stroke="none">
+                      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                    </svg>
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24" stroke="none">
+                      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                    </svg>
+                    <span class="text-yellow-400 text-2xs font-bold ml-1">5.0</span>
+                  </div>
+                  <blockquote class="text-white/95 mb-1 leading-tight font-medium text-xs italic truncate">
+                    "45% cost reduction with better accuracy. Saves hours daily."
+                  </blockquote>
+                  <div>
+                    <cite class="text-white font-bold not-italic text-xs">Dr. David Liu</cite>
+                    <div class="text-white/70 font-medium text-2xs truncate">Elite Care Center</div>
+                  </div>
+                </div>
+              </div>
+
+            <!-- Testimonial 5 -->
+            <div class="testimonial-slide flex items-start gap-2 absolute inset-0 transition-all duration-1000 ease-in-out opacity-0 translate-x-full">
+              <div class="w-8 h-8 bg-gradient-to-br from-indigo-500 via-blue-600 to-cyan-700 rounded-lg flex items-center justify-center text-white font-bold text-xs flex-shrink-0 shadow-md border border-white/20">
+                  AM
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-0.5 mb-1">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24" stroke="none">
+                      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                    </svg>
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24" stroke="none">
+                      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                    </svg>
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24" stroke="none">
+                      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                    </svg>
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24" stroke="none">
+                      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                    </svg>
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24" stroke="none">
+                      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                    </svg>
+                    <span class="text-yellow-400 text-2xs font-bold ml-1">5.0</span>
+                  </div>
+                  <blockquote class="text-white/95 mb-1 leading-tight font-medium text-xs italic truncate">
+                    "Seamless integration with exceptional support. Immediate results."
+                  </blockquote>
+                  <div>
+                    <cite class="text-white font-bold not-italic text-xs">Dr. Anna Martinez</cite>
+                    <div class="text-white/70 font-medium text-2xs truncate">Wellness Group</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Auto-slide indicators -->
+            <div class="flex justify-center gap-2 mt-4">
+              <div class="w-2 h-2 rounded-full bg-white/60 transition-all duration-300"></div>
+              <div class="w-2 h-2 rounded-full bg-white/30 transition-all duration-300"></div>
+              <div class="w-2 h-2 rounded-full bg-white/30 transition-all duration-300"></div>
+            </div>
+          </div>
+
+          <style>
+            @keyframes slideTestimonials {
+              0%, 18% { opacity: 1; transform: translateX(0); }
+              20%, 100% { opacity: 0; transform: translateX(-100%); }
+            }
+
+            .testimonial-slide:nth-child(1) { animation: slideTestimonials 15s infinite; }
+            .testimonial-slide:nth-child(2) { animation: slideTestimonials 15s infinite 3s; }
+            .testimonial-slide:nth-child(3) { animation: slideTestimonials 15s infinite 6s; }
+            .testimonial-slide:nth-child(4) { animation: slideTestimonials 15s infinite 9s; }
+            .testimonial-slide:nth-child(5) { animation: slideTestimonials 15s infinite 12s; }
+
+            @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+            @keyframes slideDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
+            @keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+            .animate-fade-in { animation: fadeIn 0.8s ease-out forwards; }
+            .animate-slide-down { animation: slideDown 0.8s ease-out forwards; }
+            .animate-slide-up { animation: slideUp 0.8s ease-out forwards; }
+            .animate-delay-200 { animation-delay: 0.2s; }
+            .animate-delay-400 { animation-delay: 0.4s; }
+            .animate-delay-600 { animation-delay: 0.6s; }
+            .animate-delay-800 { animation-delay: 0.8s; }
+            .animate-delay-1000 { animation-delay: 1s; }
+          </style>
+
+          <!-- Enhanced Features Summary -->
+          <div class="text-center animate-fade-in animate-delay-1200 relative">
+            <!-- Floating background glow -->
+            <div class="absolute inset-0 bg-gradient-to-r from-emerald-500/10 via-blue-500/10 to-pink-500/10 rounded-2xl blur-xl animate-pulse"></div>
+
+            <div class="relative bg-gradient-to-br from-white/10 via-white/5 to-white/10 backdrop-blur-sm rounded-xl p-3 border border-white/20 hover:from-white/15 hover:via-white/10 hover:to-white/15 transition-all duration-500 group"
+                 style="box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255,255,255,0.1);">
+              <p class="text-white/95 font-bold text-sm flex items-center justify-center gap-2 flex-wrap"
+                 style="text-shadow: 0 0 15px rgba(255, 255, 255, 0.2);">
+                <span class="flex items-center gap-1 bg-gradient-to-r from-emerald-400 to-green-400 bg-clip-text text-transparent animate-pulse">
+                  ⚡ AI-Powered
+                </span>
+                <span class="text-white/40">•</span>
+                <span class="flex items-center gap-1 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent animate-pulse">
+                  🔒 HIPAA Secure
+                </span>
+                <span class="text-white/40">•</span>
+                <span class="flex items-center gap-1 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent animate-pulse">
+                  🚀 2-Min Setup
+                </span>
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Side - Calculator -->
+    <div class="bg-transparent p-8 flex items-center justify-center min-h-screen">
+      <div class="w-full max-w-xl bg-black rounded-3xl overflow-hidden relative border border-transparent bg-gradient-to-b from-gray-600 via-gray-700 to-blue-300 p-px" style="box-shadow: 0 40px 80px -8px rgba(0, 0, 0, 0.9), 0 60px 120px -20px rgba(0, 0, 0, 0.6), 0 0 100px rgba(59, 130, 246, 0.2), 0 0 200px rgba(59, 130, 246, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1);">
+        <div class="bg-black rounded-3xl h-full w-full relative overflow-hidden">
+
+        <!-- Form Steps -->
+        <form
+          [formGroup]="calculatorForm"
+          (ngSubmit)="onSubmit()"
+          class="min-h-96"
+        >
+          <!-- Step 1: Practice Information -->
+          <div class="p-8 space-y-6 bg-black" *ngIf="currentStep === 1">
+            <div class="text-center mb-8">
+              <h4 class="text-2xl font-bold text-white mb-3">Practice Information</h4>
+              <p class="text-gray-300">Tell us about your practice to get personalized insights</p>
+            </div>
+
+            <div class="flex flex-col gap-8 mb-10">
+              <div class="flex flex-col">
+                <label
+                  for="address"
+                  class="font-semibold text-white mb-3 text-sm tracking-wide"
+                >
+                  Practice Address
+                </label>
+                <input
+                  type="text"
+                  id="address"
+                  formControlName="address"
+                  class="px-4 py-3 border-2 border-gray-700 rounded-xl text-sm w-full bg-gradient-to-br from-gray-900 to-gray-800 text-white focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 transition-all duration-300 shadow-inner"
+                  [ngClass]="{
+                    'border-red-500':
+                      isFieldInvalid('address')
+                  }"
+                  placeholder="123 Medical Center Dr, City, State"
+                />
+                <div
+                  class="text-red-500 text-sm mt-3 flex items-center gap-2 font-medium"
+                  *ngIf="getFieldError('address')"
+                >
+                  <span>⚠</span>
+                  {{ getFieldError("address") }}
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="flex flex-col">
+                  <label
+                    for="pincode"
+                    class="font-semibold text-white mb-3 text-sm tracking-wide"
+                    >ZIP Code</label
+                  >
+                  <input
+                    type="text"
+                    id="pincode"
+                    formControlName="pincode"
+                    class="px-4 py-3 border-2 border-gray-700 rounded-xl text-sm w-full bg-gradient-to-br from-gray-900 to-gray-800 text-white focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 transition-all duration-300 shadow-inner"
+                    [ngClass]="{
+                      'border-red-500':
+                        isFieldInvalid('pincode')
+                    }"
+                    placeholder="12345"
+                    (input)="onPincodeChange()"
+                  />
+                  <div
+                    class="text-red-500 text-xs mt-2 flex items-center gap-2"
+                    *ngIf="getFieldError('pincode')"
+                  >
+                    <span>⚠</span>
+                    {{ getFieldError("pincode") }}
+                  </div>
+                </div>
+
+                <div class="flex flex-col">
+                  <label
+                    for="specialty"
+                    class="font-semibold text-white mb-3 text-sm tracking-wide"
+                    >Medical Specialty</label
+                  >
+                  <select
+                    id="specialty"
+                    formControlName="specialty"
+                    class="px-4 py-3 border-2 border-gray-700 rounded-xl text-sm w-full bg-gradient-to-br from-gray-900 to-gray-800 text-white focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 transition-all duration-300 shadow-inner"
+                    [ngClass]="{
+                      'border-red-500':
+                        isFieldInvalid('specialty')
+                    }"
+                  >
+                    <option value="">Select specialty</option>
+                    <option value="family-medicine">Family Medicine</option>
+                    <option value="internal-medicine">Internal Medicine</option>
+                    <option value="pediatrics">Pediatrics</option>
+                    <option value="cardiology">Cardiology</option>
+                    <option value="orthopedics">Orthopedics</option>
+                    <option value="dermatology">Dermatology</option>
+                    <option value="neurology">Neurology</option>
+                    <option value="psychiatry">Psychiatry</option>
+                    <option value="emergency-medicine">
+                      Emergency Medicine
+                    </option>
+                    <option value="other">Other</option>
+                  </select>
+                  <div
+                    class="text-red-500 text-xs mt-2 flex items-center gap-2"
+                    *ngIf="getFieldError('specialty')"
+                  >
+                    <span>⚠</span>
+                    {{ getFieldError("specialty") }}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex justify-between items-center pt-8 border-t border-gray-800">
+              <div></div>
+              <button
+                type="button"
+                class="relative overflow-hidden bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white px-10 py-4 rounded-2xl font-bold text-base hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 transition-all duration-500 shadow-2xl hover:shadow-pink-500/25 transform hover:scale-110 disabled:opacity-50 disabled:cursor-not-allowed border border-white/20 backdrop-blur-sm before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-700"
+                (click)="nextStep()"
+                [disabled]="!isStep1Valid()"
+              >
+                <span class="relative z-10 flex items-center gap-3">
+                Continue
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                    class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                >
+                  <path d="M8 1l7 7-7 7" />
+                </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2: Financial & Volume Data -->
+          <div class="p-8 space-y-6 bg-black" *ngIf="currentStep === 2">
+            <div class="text-center mb-8">
+              <h4 class="text-2xl font-bold text-white mb-3">Financial & Volume Data</h4>
+              <p class="text-gray-300">Your practice's key metrics</p>
+            </div>
+
+            <div class="space-y-8">
+              <div class="input-row grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="input-group space-y-3">
+                  <label
+                    for="patientVolume"
+                    class="block text-white font-bold text-sm tracking-wide"
+                    >Patient Volume</label
+                  >
+                  <div
+                    class="input-with-addon flex rounded-xl overflow-hidden border-2 border-gray-600 focus-within:border-blue-500 transition-all duration-300 bg-gray-800 shadow-sm"
+                  >
+                    <input
+                      type="number"
+                      id="patientVolume"
+                      formControlName="patientVolume"
+                      class="flex-1 px-4 py-3 text-white bg-transparent border-none focus:outline-none text-base font-medium"
+                      [class.border-red-500]="isFieldInvalid('patientVolume')"
+                      placeholder="100"
+                      min="1"
+                    />
+                    <select
+                      formControlName="volumePeriod"
+                      class="px-4 py-3 bg-gray-700 border-l-2 border-gray-600 text-white font-medium focus:outline-none"
+                    >
+                      <option value="weekly">per week</option>
+                      <option value="monthly">per month</option>
+                      <option value="quarterly">per quarter</option>
+                    </select>
+                  </div>
+                  <div
+                    class="text-red-600 text-sm flex items-center gap-2 font-medium"
+                    *ngIf="getFieldError('patientVolume')"
+                  >
+                    <span>⚠</span>
+                    {{ getFieldError("patientVolume") }}
+                  </div>
+                </div>
+
+                <div class="input-group space-y-3">
+                  <label
+                    for="billingAverage"
+                    class="block text-white font-bold text-sm tracking-wide"
+                    >Avg Revenue per Patient</label
+                  >
+                  <div
+                    class="input-with-prefix relative flex rounded-xl overflow-hidden border-2 border-gray-600 focus-within:border-blue-500 transition-all duration-300 bg-gray-800 shadow-sm"
+                  >
+                    <span
+                      class="absolute inset-y-0 left-0 flex items-center pl-4 text-white font-medium"
+                      >$</span
+                    >
+                    <input
+                      type="number"
+                      id="billingAverage"
+                      formControlName="billingAverage"
+                      class="w-full pl-8 pr-4 py-3 text-white bg-transparent border-none focus:outline-none text-base font-medium"
+                      [class.border-red-500]="isFieldInvalid('billingAverage')"
+                      placeholder="150.00"
+                      min="0.01"
+                      step="0.01"
+                    />
+                  </div>
+                  <div
+                    class="text-red-600 text-sm flex items-center gap-2 font-medium"
+                    *ngIf="getFieldError('billingAverage')"
+                  >
+                    <span>⚠</span>
+                    {{ getFieldError("billingAverage") }}
+                  </div>
+                </div>
+              </div>
+
+              <!-- Collection Rate Slider -->
+              <div class="input-group space-y-4">
+                <label
+                  for="collectionRate"
+                  class="block text-white font-bold text-sm tracking-wide"
+                  >Collection Rate</label
+                >
+                <div class="range-slider-container space-y-2">
+                  <input
+                    type="range"
+                    id="collectionRate"
+                    formControlName="collectionRate"
+                    class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                    min="1"
+                    max="100"
+                    step="1"
+                  />
+                  <div
+                    class="range-labels flex justify-between text-sm text-white font-medium"
+                  >
+                    <span>1%</span>
+                    <span class="text-blue-400 font-bold"
+                      >{{ calculatorForm.get("collectionRate")?.value }}%</span
+                    >
+                    <span>100%</span>
+                  </div>
+                </div>
+                <div class="text-gray-300 text-sm font-medium">
+                  Percentage of billed amount collected
+                </div>
+              </div>
+
+              <!-- Payment Time Slider -->
+              <div class="input-group space-y-4">
+                <label
+                  for="paymentTime"
+                  class="block text-white font-bold text-sm tracking-wide"
+                  >Average Payment Time</label
+                >
+                <div class="range-slider-container space-y-2">
+                  <input
+                    type="range"
+                    id="paymentTime"
+                    formControlName="paymentTime"
+                    class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                    min="1"
+                    max="90"
+                    step="1"
+                  />
+                  <div
+                    class="range-labels flex justify-between text-sm text-white font-medium"
+                  >
+                    <span>1 day</span>
+                    <span class="text-blue-400 font-bold"
+                      >{{ calculatorForm.get("paymentTime")?.value }} days</span
+                    >
+                    <span>90 days</span>
+                  </div>
+                </div>
+                <div class="text-gray-300 text-sm font-medium">
+                  Days from claim submission to payment
+                </div>
+              </div>
+
+              <!-- Denial Rate Toggle -->
+              <div class="input-group space-y-4">
+                <label class="block text-white font-bold text-sm tracking-wide"
+                  >Do you know your denial rate?</label
+                >
+                <div class="toggle-group flex gap-4">
+                  <button
+                    type="button"
+                    class="flex-1 py-3 px-6 rounded-xl font-medium text-sm transition-all duration-300"
+                    [class.bg-blue-500]="
+                      calculatorForm.get('knowDenialRate')?.value === 'yes'
+                    "
+                    [class.text-white]="
+                      calculatorForm.get('knowDenialRate')?.value === 'yes'
+                    "
+                    [class.bg-gray-700]="
+                      calculatorForm.get('knowDenialRate')?.value !== 'yes'
+                    "
+                    [class.text-gray-300]="
+                      calculatorForm.get('knowDenialRate')?.value !== 'yes'
+                    "
+                    (click)="
+                      calculatorForm.patchValue({ knowDenialRate: 'yes' })
+                    "
+                  >
+                    Yes, I know it
+                  </button>
+                  <button
+                    type="button"
+                    class="flex-1 py-3 px-6 rounded-xl font-medium text-sm transition-all duration-300"
+                    [class.bg-blue-500]="
+                      calculatorForm.get('knowDenialRate')?.value === 'no'
+                    "
+                    [class.text-white]="
+                      calculatorForm.get('knowDenialRate')?.value === 'no'
+                    "
+                    [class.bg-gray-700]="
+                      calculatorForm.get('knowDenialRate')?.value !== 'no'
+                    "
+                    [class.text-gray-300]="
+                      calculatorForm.get('knowDenialRate')?.value !== 'no'
+                    "
+                    (click)="
+                      calculatorForm.patchValue({ knowDenialRate: 'no' })
+                    "
+                  >
+                    Estimate for me
+                  </button>
+                </div>
+              </div>
+
+              <!-- Denial Rate Slider (if known) -->
+              <div
+                class="input-group space-y-4"
+                *ngIf="calculatorForm.get('knowDenialRate')?.value === 'yes'"
+              >
+                <label
+                  for="denialRate"
+                  class="block text-white font-bold text-sm tracking-wide"
+                  >Current Denial Rate</label
+                >
+                <div class="range-slider-container space-y-2">
+                  <input
+                    type="range"
+                    id="denialRate"
+                    formControlName="denialRate"
+                    class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-red-500"
+                    min="0"
+                    max="50"
+                    step="0.5"
+                  />
+                  <div
+                    class="range-labels flex justify-between text-sm text-white font-medium"
+                  >
+                    <span>0%</span>
+                    <span class="text-red-400 font-bold"
+                      >{{ calculatorForm.get("denialRate")?.value }}%</span
+                    >
+                    <span>50%</span>
+                  </div>
+                </div>
+                <div class="text-gray-300 text-sm font-medium">
+                  Percentage of claims initially denied
+                </div>
+              </div>
+            </div>
+
+            <div class="flex justify-between items-center pt-8 border-t border-gray-100">
+              <button
+                type="button"
+                class="bg-gray-100 text-gray-700 px-6 py-3 rounded-xl font-semibold text-base flex items-center gap-3 hover:bg-gray-200 transition-all duration-300 shadow-md hover:shadow-lg"
+                (click)="previousStep()"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                >
+                  <path d="M8 15L1 8l7-7" />
+                </svg>
+                Previous
+              </button>
+              <button
+                type="button"
+                class="relative overflow-hidden bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white px-10 py-4 rounded-2xl font-bold text-base hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 transition-all duration-500 shadow-2xl hover:shadow-pink-500/25 transform hover:scale-110 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none border border-white/20 backdrop-blur-sm before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-700"
+                (click)="nextStep()"
+                [disabled]="!isStep2Valid()"
+              >
+                <span class="relative z-10 flex items-center gap-3">
+                Continue
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                    class="transition-transform duration-300 group-hover:translate-x-1"
+                >
+                  <path d="M8 1l7 7-7 7" />
+                </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 3: Processing Model -->
+          <div class="p-10 space-y-8 bg-black" *ngIf="currentStep === 3">
+            <div class="text-center mb-8">
+              <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl shadow-lg">⚙️</div>
+              <h4 class="text-2xl font-bold text-white mb-2">Processing Model</h4>
+              <p class="text-gray-300 font-medium">How do you handle billing?</p>
+            </div>
+
+            <div class="space-y-8">
+              <!-- Processing Type Selection -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div
+                  class="relative p-6 border-2 rounded-2xl cursor-pointer transition-all duration-300 hover:shadow-2xl hover:scale-105"
+                  [ngClass]="{
+                    'border-blue-400 bg-gradient-to-br from-gray-900 to-gray-800 shadow-2xl ring-2 ring-blue-400/20': calculatorForm.get('processingType')?.value === 'inhouse',
+                    'border-gray-600 bg-gradient-to-br from-gray-800 to-gray-900 hover:border-blue-500/50': calculatorForm.get('processingType')?.value !== 'inhouse'
+                  }"
+                  (click)="setProcessingType('inhouse')"
+                >
+                  <div class="text-4xl mb-4">🏢</div>
+                  <h5 class="text-xl font-bold text-white mb-2">In-House</h5>
+                  <p class="text-gray-300 mb-4">Internal billing team</p>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-blue-600 text-blue-100 text-sm font-medium rounded-full">Full Control</span>
+                    <span class="px-3 py-1 bg-blue-600 text-blue-100 text-sm font-medium rounded-full">Direct Access</span>
+                  </div>
+                </div>
+
+                <div
+                  class="relative p-6 border-2 rounded-2xl cursor-pointer transition-all duration-300 hover:shadow-2xl hover:scale-105"
+                  [ngClass]="{
+                    'border-blue-400 bg-gradient-to-br from-gray-900 to-gray-800 shadow-2xl ring-2 ring-blue-400/20': calculatorForm.get('processingType')?.value === 'outsource',
+                    'border-gray-600 bg-gradient-to-br from-gray-800 to-gray-900 hover:border-blue-500/50': calculatorForm.get('processingType')?.value !== 'outsource'
+                  }"
+                  (click)="setProcessingType('outsource')"
+                >
+                  <div class="text-4xl mb-4">🤝</div>
+                  <h5 class="text-xl font-bold text-white mb-2">Outsourced</h5>
+                  <p class="text-gray-300 mb-4">External billing service</p>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-emerald-600 text-emerald-100 text-sm font-medium rounded-full">Expert Team</span>
+                    <span class="px-3 py-1 bg-emerald-600 text-emerald-100 text-sm font-medium rounded-full">Cost Effective</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- In-House Details -->
+              <div
+                class="processing-details"
+                *ngIf="
+                  calculatorForm.get('processingType')?.value === 'inhouse'
+                "
+              >
+                <div class="input-row">
+                  <div class="input-group">
+                    <label for="staffWages">Staff Wages</label>
+                    <div class="input-with-addon">
+                      <div class="input-with-prefix">
+                        <span class="input-prefix">$</span>
+                        <input
+                          type="number"
+                          id="staffWages"
+                          formControlName="staffWages"
+                          class="form-input"
+                          [class.invalid]="isFieldInvalid('staffWages')"
+                          placeholder="5000"
+                          min="0.01"
+                          step="0.01"
+                        />
+                      </div>
+                      <select formControlName="wageType" class="input-addon">
+                        <option value="hourly">per hour</option>
+                        <option value="weekly">per week</option>
+                        <option value="monthly">per month</option>
+                        <option value="annually">per year</option>
+                      </select>
+                    </div>
+                    <div
+                      class="error-message"
+                      *ngIf="getFieldError('staffWages')"
+                    >
+                      {{ getFieldError("staffWages") }}
+                    </div>
+                  </div>
+
+                  <div class="input-group">
+                    <label for="staffCount">Number of Staff</label>
+                    <input
+                      type="number"
+                      id="staffCount"
+                      formControlName="staffCount"
+                      class="form-input"
+                      [class.invalid]="isFieldInvalid('staffCount')"
+                      placeholder="2"
+                      min="1"
+                    />
+                    <div
+                      class="error-message"
+                      *ngIf="getFieldError('staffCount')"
+                    >
+                      {{ getFieldError("staffCount") }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Outsourced Details -->
+              <div
+                class="processing-details"
+                *ngIf="
+                  calculatorForm.get('processingType')?.value === 'outsource'
+                "
+              >
+                <div class="space-y-4">
+                  <label class="block text-lg font-bold text-white">Pricing Model</label>
+                  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <button
+                      type="button"
+                      class="p-4 border-2 rounded-xl text-center transition-all duration-300 hover:shadow-xl hover:scale-105"
+                      [ngClass]="{
+                        'border-blue-400 bg-gradient-to-br from-gray-900 to-gray-800 text-blue-300 shadow-lg ring-2 ring-blue-400/20': calculatorForm.get('outsourcePricing')?.value === 'percentage',
+                        'border-gray-600 bg-gradient-to-br from-gray-800 to-gray-900 text-gray-300 hover:border-blue-500/50': calculatorForm.get('outsourcePricing')?.value !== 'percentage'
+                      }"
+                      (click)="setOutsourcePricing('percentage')"
+                    >
+                      <span class="block text-2xl mb-2">%</span>
+                      <span class="text-sm font-medium">Percentage</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="p-4 border-2 rounded-xl text-center transition-all duration-300 hover:shadow-xl hover:scale-105"
+                      [ngClass]="{
+                        'border-blue-400 bg-gradient-to-br from-gray-900 to-gray-800 text-blue-300 shadow-lg ring-2 ring-blue-400/20': calculatorForm.get('outsourcePricing')?.value === 'perClaim',
+                        'border-gray-600 bg-gradient-to-br from-gray-800 to-gray-900 text-gray-300 hover:border-blue-500/50': calculatorForm.get('outsourcePricing')?.value !== 'perClaim'
+                      }"
+                      (click)="setOutsourcePricing('perClaim')"
+                    >
+                      <span class="block text-2xl mb-2">📄</span>
+                      <span class="text-sm font-medium">Per Claim</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="p-4 border-2 rounded-xl text-center transition-all duration-300 hover:shadow-xl hover:scale-105"
+                      [ngClass]="{
+                        'border-blue-400 bg-gradient-to-br from-gray-900 to-gray-800 text-blue-300 shadow-lg ring-2 ring-blue-400/20': calculatorForm.get('outsourcePricing')?.value === 'monthly',
+                        'border-gray-600 bg-gradient-to-br from-gray-800 to-gray-900 text-gray-300 hover:border-blue-500/50': calculatorForm.get('outsourcePricing')?.value !== 'monthly'
+                      }"
+                      (click)="setOutsourcePricing('monthly')"
+                    >
+                      <span class="block text-2xl mb-2">📅</span>
+                      <span class="text-sm font-medium">Monthly</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="p-4 border-2 rounded-xl text-center transition-all duration-300 hover:shadow-xl hover:scale-105"
+                      [ngClass]="{
+                        'border-blue-400 bg-gradient-to-br from-gray-900 to-gray-800 text-blue-300 shadow-lg ring-2 ring-blue-400/20': calculatorForm.get('outsourcePricing')?.value === 'hourly',
+                        'border-gray-600 bg-gradient-to-br from-gray-800 to-gray-900 text-gray-300 hover:border-blue-500/50': calculatorForm.get('outsourcePricing')?.value !== 'hourly'
+                      }"
+                      (click)="setOutsourcePricing('hourly')"
+                    >
+                      <span class="block text-2xl mb-2">⏰</span>
+                      <span class="text-sm font-medium">Hourly</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Pricing Input based on selection -->
+                <div
+                  class="input-group"
+                  *ngIf="calculatorForm.get('outsourcePricing')?.value"
+                >
+                  <div
+                    *ngIf="
+                      calculatorForm.get('outsourcePricing')?.value ===
+                      'percentage'
+                    "
+                  >
+                    <label for="percentageValue">Percentage Rate</label>
+                    <div class="range-slider-container">
+                      <input
+                        type="range"
+                        id="percentageValue"
+                        formControlName="percentageValue"
+                        class="range-slider"
+                        min="1"
+                        max="25"
+                        step="0.5"
+                      />
+                      <div class="range-labels">
+                        <span>1%</span>
+                        <span class="range-value"
+                          >{{
+                            calculatorForm.get("percentageValue")?.value
+                          }}%</span
+                        >
+                        <span>25%</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    *ngIf="
+                      calculatorForm.get('outsourcePricing')?.value ===
+                      'perClaim'
+                    "
+                  >
+                    <label for="perClaimValue" class="block text-lg font-bold text-white mb-3">Per Claim Fee</label>
+                    <div class="relative flex rounded-xl overflow-hidden border-2 border-gray-700 focus-within:border-blue-500 transition-all duration-300 bg-gray-900 shadow-sm">
+                      <span class="absolute inset-y-0 left-0 flex items-center pl-4 text-gray-300 font-medium">$</span>
+                      <input
+                        type="number"
+                        id="perClaimValue"
+                        formControlName="perClaimValue"
+                        class="w-full pl-8 pr-4 py-3 text-white bg-transparent border-none focus:outline-none text-base font-medium"
+                        placeholder="5.00"
+                        min="0.01"
+                        step="0.01"
+                      />
+                    </div>
+                  </div>
+
+                  <div
+                    *ngIf="
+                      calculatorForm.get('outsourcePricing')?.value ===
+                      'monthly'
+                    "
+                  >
+                    <label for="monthlyValue" class="block text-lg font-bold text-white mb-3">Monthly Fee</label>
+                    <div class="relative flex rounded-xl overflow-hidden border-2 border-gray-700 focus-within:border-blue-500 transition-all duration-300 bg-gray-900 shadow-sm">
+                      <span class="absolute inset-y-0 left-0 flex items-center pl-4 text-gray-300 font-medium">$</span>
+                      <input
+                        type="number"
+                        id="monthlyValue"
+                        formControlName="monthlyValue"
+                        class="w-full pl-8 pr-4 py-3 text-white bg-transparent border-none focus:outline-none text-base font-medium"
+                        placeholder="2000.00"
+                        min="0.01"
+                        step="0.01"
+                      />
+                    </div>
+                  </div>
+
+                  <div
+                    *ngIf="
+                      calculatorForm.get('outsourcePricing')?.value === 'hourly'
+                    "
+                  >
+                    <label for="hourlyValue" class="block text-lg font-bold text-white mb-3">Hourly Rate</label>
+                    <div class="relative flex rounded-xl overflow-hidden border-2 border-gray-700 focus-within:border-blue-500 transition-all duration-300 bg-gray-900 shadow-sm">
+                      <span class="absolute inset-y-0 left-0 flex items-center pl-4 text-gray-300 font-medium">$</span>
+                      <input
+                        type="number"
+                        id="hourlyValue"
+                        formControlName="hourlyValue"
+                        class="w-full pl-8 pr-4 py-3 text-white bg-transparent border-none focus:outline-none text-base font-medium"
+                        placeholder="25.00"
+                        min="0.01"
+                        step="0.01"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex justify-between items-center pt-8 border-t border-gray-100">
+              <button
+                type="button"
+                class="bg-gray-100 text-gray-700 px-6 py-3 rounded-xl font-semibold text-base flex items-center gap-3 hover:bg-gray-200 transition-all duration-300 shadow-md hover:shadow-lg"
+                (click)="previousStep()"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                >
+                  <path d="M8 15L1 8l7-7" />
+                </svg>
+                Previous
+              </button>
+              <button
+                type="submit"
+                class="relative overflow-hidden bg-gradient-to-r from-emerald-400 via-green-500 to-teal-500 text-white px-10 py-4 rounded-2xl font-bold text-base hover:from-emerald-500 hover:via-green-600 hover:to-teal-600 transition-all duration-500 shadow-2xl hover:shadow-emerald-500/25 transform hover:scale-110 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none border border-white/20 backdrop-blur-sm before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-700"
+                [disabled]="!isStep3Valid() || isLoading"
+              >
+                <span *ngIf="!isLoading" class="relative z-10 flex items-center gap-3">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    class="transition-transform duration-300 group-hover:translate-x-1"
+                  >
+                    <path d="M8 2l6 6-6 6M2 8h12" />
+                  </svg>
+                  Analyze Claims
+                </span>
+                <span *ngIf="isLoading" class="relative z-10 flex items-center gap-3">
+                  <div class="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                  Analyzing...
+                </span>
+              </button>
+            </div>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Results Section -->
+  <div class="bg-transparent px-8 py-16" *ngIf="calculationResult">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-white mb-4">Your Medical Claims Analysis</h2>
+        <p class="text-xl text-white/80 mb-8">Based on your practice data and industry benchmarks</p>
+        <button
+          type="button"
+          class="bg-white text-blue-600 border-2 border-blue-600 px-6 py-3 rounded-xl font-semibold text-base flex items-center gap-3 hover:bg-blue-50 transition-all duration-300 shadow-md hover:shadow-lg mx-auto"
+          (click)="resetCalculator()"
+        >
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M1 4v6h6M15 12V6H9" />
+          </svg>
+          New Analysis
+        </button>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+          <div class="text-4xl mb-4 text-center">📊</div>
+          <div class="text-center">
+            <div class="text-3xl font-black text-gray-800 mb-2">
+              {{ calculationResult.userMetrics.averageClaimPercentage }}%
+            </div>
+            <div class="text-sm font-semibold text-gray-600 uppercase tracking-wider mb-3">Claim Success Rate</div>
+            <div
+              class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide"
+              [ngClass]="
+                getPerformanceClass(
+                  calculationResult.userMetrics.averageClaimPercentage
+                )
+              "
+            >
+              {{
+                getPerformanceLabel(
+                  calculationResult.userMetrics.averageClaimPercentage
+                )
+              }}
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+          <div class="text-4xl mb-4 text-center">❌</div>
+          <div class="text-center">
+            <div class="text-3xl font-black text-gray-800 mb-2">
+              {{ calculationResult.userMetrics.claimDenialRate }}%
+            </div>
+            <div class="text-sm font-semibold text-gray-600 uppercase tracking-wider mb-3">Denial Rate</div>
+            <div
+              class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide"
+              [ngClass]="
+                getPerformanceClass(
+                  100 - calculationResult.userMetrics.claimDenialRate
+                )
+              "
+            >
+              {{
+                getPerformanceLabel(
+                  100 - calculationResult.userMetrics.claimDenialRate
+                )
+              }}
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+          <div class="text-4xl mb-4 text-center">💵</div>
+          <div class="text-center">
+            <div class="text-3xl font-black text-gray-800 mb-2">
+              {{ formatCurrency(calculationResult.userMetrics.costPerClaim) }}
+            </div>
+            <div class="text-sm font-semibold text-gray-600 uppercase tracking-wider">Cost per Claim</div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+          <div class="text-4xl mb-4 text-center">📋</div>
+          <div class="text-center">
+            <div class="text-3xl font-black text-gray-800 mb-2">
+              {{ calculationResult.userMetrics.totalMonthlyClaims }}
+            </div>
+            <div class="text-sm font-semibold text-gray-600 uppercase tracking-wider">Monthly Claims</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

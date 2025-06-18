@@ -458,32 +458,43 @@
                   <select
                     id="specialty"
                     formControlName="specialty"
-                    class="px-4 py-3 border-2 border-gray-700 rounded-xl text-sm w-full bg-gradient-to-br from-gray-900 to-gray-800 text-white focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 transition-all duration-300 shadow-inner"
+                    class="px-4 py-3 border-2 rounded-xl text-sm w-full bg-gradient-to-br from-gray-900 to-gray-800 text-white focus:outline-none transition-all duration-300 shadow-inner"
                     [ngClass]="{
-                      'border-red-500':
-                        isFieldInvalid('specialty')
+                      'border-red-500 ring-2 ring-red-500/20 bg-red-900/20': isFieldInvalid('specialty'),
+                      'border-gray-700 focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20': !isFieldInvalid('specialty')
                     }"
                   >
-                    <option value="">Select specialty</option>
-                    <option value="family-medicine">Family Medicine</option>
-                    <option value="internal-medicine">Internal Medicine</option>
-                    <option value="pediatrics">Pediatrics</option>
-                    <option value="cardiology">Cardiology</option>
-                    <option value="orthopedics">Orthopedics</option>
-                    <option value="dermatology">Dermatology</option>
-                    <option value="neurology">Neurology</option>
-                    <option value="psychiatry">Psychiatry</option>
-                    <option value="emergency-medicine">
+                    <option value="" class="bg-black text-gray-400" disabled>Please select</option>
+                    <option value="family-medicine" class="bg-black text-white">Family Medicine</option>
+                    <option value="internal-medicine" class="bg-black text-white">Internal Medicine</option>
+                    <option value="pediatrics" class="bg-black text-white">Pediatrics</option>
+                    <option value="cardiology" class="bg-black text-white">Cardiology</option>
+                    <option value="orthopedics" class="bg-black text-white">Orthopedics</option>
+                    <option value="dermatology" class="bg-black text-white">Dermatology</option>
+                    <option value="neurology" class="bg-black text-white">Neurology</option>
+                    <option value="psychiatry" class="bg-black text-white">Psychiatry</option>
+                    <option value="emergency-medicine" class="bg-black text-white">
                       Emergency Medicine
                     </option>
-                    <option value="other">Other</option>
+                    <option value="other" class="bg-black text-white">Other</option>
                   </select>
+
+                  <!-- Enhanced Error/Warning Message -->
                   <div
-                    class="text-red-500 text-xs mt-2 flex items-center gap-2"
-                    *ngIf="getFieldError('specialty')"
+                    class="mt-2 animate-fade-in"
+                    *ngIf="isFieldInvalid('specialty')"
                   >
-                    <span>⚠</span>
-                    {{ getFieldError("specialty") }}
+                    <div class="flex items-center gap-2 text-red-400 text-xs font-medium bg-red-900/10 border border-red-500/20 rounded-lg px-3 py-2">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="flex-shrink-0">
+                        <path d="M12 9v4m0 4h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                      </svg>
+                      <span>{{ getFieldError("specialty") || "Please select your medical specialty to continue" }}</span>
+                    </div>
+                  </div>
+
+                  <!-- Helper Text -->
+                  <div class="text-gray-400 text-xs mt-1 font-medium" *ngIf="!isFieldInvalid('specialty')">
+                    This helps us provide accurate industry benchmarks
                   </div>
                 </div>
               </div>
@@ -604,7 +615,7 @@
                     type="range"
                     id="collectionRate"
                     formControlName="collectionRate"
-                    class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                    class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
                     min="1"
                     max="100"
                     step="1"
@@ -722,7 +733,7 @@
                     type="range"
                     id="denialRate"
                     formControlName="denialRate"
-                    class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-red-500"
+                    class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
                     min="0"
                     max="50"
                     step="0.5"
@@ -731,7 +742,7 @@
                     class="range-labels flex justify-between text-sm text-white font-medium"
                   >
                     <span>0%</span>
-                    <span class="text-red-400 font-bold"
+                    <span class="text-blue-400 font-bold"
                       >{{ calculatorForm.get("denialRate")?.value }}%</span
                     >
                     <span>50%</span>
@@ -827,61 +838,122 @@
                 </div>
               </div>
 
-              <!-- In-House Details -->
+              <!-- Enhanced In-House Details -->
               <div
-                class="processing-details"
-                *ngIf="
-                  calculatorForm.get('processingType')?.value === 'inhouse'
-                "
+                class="mt-8 animate-fade-in"
+                *ngIf="calculatorForm.get('processingType')?.value === 'inhouse'"
               >
-                <div class="input-row">
-                  <div class="input-group">
-                    <label for="staffWages">Staff Wages</label>
-                    <div class="input-with-addon">
-                      <div class="input-with-prefix">
-                        <span class="input-prefix">$</span>
-                        <input
-                          type="number"
-                          id="staffWages"
-                          formControlName="staffWages"
-                          class="form-input"
-                          [class.invalid]="isFieldInvalid('staffWages')"
-                          placeholder="5000"
-                          min="0.01"
-                          step="0.01"
-                        />
-                      </div>
-                      <select formControlName="wageType" class="input-addon">
-                        <option value="hourly">per hour</option>
-                        <option value="weekly">per week</option>
-                        <option value="monthly">per month</option>
-                        <option value="annually">per year</option>
+                <!-- Section Header -->
+                <div class="text-center mb-6">
+                  <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center mx-auto mb-3 text-xl shadow-lg">
+                    👥
+                  </div>
+                  <h5 class="text-xl font-bold text-white mb-2">In-House Team Details</h5>
+                  <p class="text-gray-300 text-sm">Tell us about your internal billing staff</p>
+                </div>
+
+                <div class="space-y-6">
+                  <!-- Staff Wages -->
+                  <div class="space-y-3">
+                    <label for="staffWages" class="block text-white font-bold text-sm tracking-wide">
+                      Staff Wages
+                    </label>
+                    <div class="flex rounded-xl overflow-hidden border-2 border-gray-700 focus-within:border-blue-500 transition-all duration-300 bg-gray-900 shadow-sm"
+                         [ngClass]="{'border-red-500 ring-2 ring-red-500/20': isFieldInvalid('staffWages')}">
+                      <span class="flex items-center pl-4 text-gray-300 font-medium bg-gray-800 border-r border-gray-700">$</span>
+                      <input
+                        type="number"
+                        id="staffWages"
+                        formControlName="staffWages"
+                        class="flex-1 px-4 py-3 text-white bg-transparent border-none focus:outline-none text-base font-medium"
+                        placeholder="5000"
+                        min="0.01"
+                        step="0.01"
+                      />
+                      <select
+                        formControlName="wageType"
+                        class="px-4 py-3 bg-gray-800 border-l border-gray-700 text-white font-medium focus:outline-none text-sm">
+                        <option value="hourly" class="bg-black text-white">per hour</option>
+                        <option value="weekly" class="bg-black text-white">per week</option>
+                        <option value="monthly" class="bg-black text-white">per month</option>
+                        <option value="annually" class="bg-black text-white">per year</option>
                       </select>
                     </div>
-                    <div
-                      class="error-message"
-                      *ngIf="getFieldError('staffWages')"
-                    >
-                      {{ getFieldError("staffWages") }}
+
+                    <!-- Enhanced Error Message -->
+                    <div class="mt-2 animate-fade-in" *ngIf="isFieldInvalid('staffWages')">
+                      <div class="flex items-center gap-2 text-red-400 text-xs font-medium bg-red-900/10 border border-red-500/20 rounded-lg px-3 py-2">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="flex-shrink-0">
+                          <path d="M12 9v4m0 4h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                        </svg>
+                        <span>{{ getFieldError("staffWages") || "Please enter staff wages" }}</span>
+                      </div>
+                    </div>
+
+                    <div class="text-gray-400 text-xs font-medium" *ngIf="!isFieldInvalid('staffWages')">
+                      Average wage per billing staff member
                     </div>
                   </div>
 
-                  <div class="input-group">
-                    <label for="staffCount">Number of Staff</label>
-                    <input
-                      type="number"
-                      id="staffCount"
-                      formControlName="staffCount"
-                      class="form-input"
-                      [class.invalid]="isFieldInvalid('staffCount')"
-                      placeholder="2"
-                      min="1"
-                    />
-                    <div
-                      class="error-message"
-                      *ngIf="getFieldError('staffCount')"
-                    >
-                      {{ getFieldError("staffCount") }}
+                  <!-- Number of Staff -->
+                  <div class="space-y-3">
+                    <label for="staffCount" class="block text-white font-bold text-sm tracking-wide">
+                      Number of Billing Staff
+                    </label>
+                    <div class="relative">
+                      <input
+                        type="number"
+                        id="staffCount"
+                        formControlName="staffCount"
+                        class="w-full px-4 py-3 border-2 rounded-xl text-base bg-gradient-to-br from-gray-900 to-gray-800 text-white focus:outline-none transition-all duration-300 shadow-inner font-medium"
+                        [ngClass]="{
+                          'border-red-500 ring-2 ring-red-500/20 bg-red-900/20': isFieldInvalid('staffCount'),
+                          'border-gray-700 focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20': !isFieldInvalid('staffCount')
+                        }"
+                        placeholder="2"
+                        min="1"
+                      />
+                      <div class="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-gray-400">
+                          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                          <circle cx="9" cy="7" r="4"/>
+                          <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                          <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                      </div>
+                    </div>
+
+                    <!-- Enhanced Error Message -->
+                    <div class="mt-2 animate-fade-in" *ngIf="isFieldInvalid('staffCount')">
+                      <div class="flex items-center gap-2 text-red-400 text-xs font-medium bg-red-900/10 border border-red-500/20 rounded-lg px-3 py-2">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="flex-shrink-0">
+                          <path d="M12 9v4m0 4h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                        </svg>
+                        <span>{{ getFieldError("staffCount") || "Please enter number of staff" }}</span>
+                      </div>
+                    </div>
+
+                    <div class="text-gray-400 text-xs font-medium" *ngIf="!isFieldInvalid('staffCount')">
+                      Full-time equivalent billing team members
+                    </div>
+                  </div>
+
+                  <!-- Cost Preview Card -->
+                  <div class="bg-gradient-to-br from-blue-900/20 via-purple-900/20 to-pink-900/20 border border-blue-500/30 rounded-xl p-4 backdrop-blur-sm">
+                    <div class="flex items-center gap-3 mb-3">
+                      <div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center text-white text-sm font-bold">
+                        💰
+                      </div>
+                      <h6 class="text-white font-bold text-sm">Estimated Monthly Cost</h6>
+                    </div>
+                    <div class="text-2xl font-black text-blue-400 mb-1" *ngIf="calculatorForm.get('staffWages')?.value && calculatorForm.get('staffCount')?.value">
+                      ${{ calculateMonthlyCost() | number:'1.0-0' }}
+                    </div>
+                    <div class="text-gray-300 text-xs" *ngIf="calculatorForm.get('staffWages')?.value && calculatorForm.get('staffCount')?.value">
+                      Based on {{ calculatorForm.get('staffCount')?.value }} staff × ${{ calculatorForm.get('staffWages')?.value }} {{ calculatorForm.get('wageType')?.value }}
+                    </div>
+                    <div class="text-gray-400 text-xs" *ngIf="!calculatorForm.get('staffWages')?.value || !calculatorForm.get('staffCount')?.value">
+                      Enter wages and staff count to see estimated cost
                     </div>
                   </div>
                 </div>
@@ -953,31 +1025,58 @@
                   class="input-group"
                   *ngIf="calculatorForm.get('outsourcePricing')?.value"
                 >
+                  <!-- Enhanced Percentage Option -->
                   <div
-                    *ngIf="
-                      calculatorForm.get('outsourcePricing')?.value ===
-                      'percentage'
-                    "
+                    class="mt-6 animate-fade-in"
+                    *ngIf="calculatorForm.get('outsourcePricing')?.value === 'percentage'"
                   >
-                    <label for="percentageValue">Percentage Rate</label>
-                    <div class="range-slider-container">
-                      <input
-                        type="range"
-                        id="percentageValue"
-                        formControlName="percentageValue"
-                        class="range-slider"
-                        min="1"
-                        max="25"
-                        step="0.5"
-                      />
-                      <div class="range-labels">
-                        <span>1%</span>
-                        <span class="range-value"
-                          >{{
-                            calculatorForm.get("percentageValue")?.value
-                          }}%</span
-                        >
-                        <span>25%</span>
+
+
+                    <div class="space-y-6">
+                      <!-- Percentage Rate Slider -->
+                      <div class="space-y-4">
+                        <label for="percentageValue" class="block text-white font-bold text-sm tracking-wide">
+                          Percentage Rate
+                        </label>
+                        <div class="bg-gradient-to-br from-gray-900/50 via-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-xl p-4 space-y-3">
+                          <input
+                            type="range"
+                            id="percentageValue"
+                            formControlName="percentageValue"
+                            class="w-full h-3 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-blue-500 hover:accent-blue-400 transition-all duration-300"
+                            min="1"
+                            max="25"
+                            step="0.5"
+                          />
+                          <div class="flex justify-between text-sm text-white font-medium">
+                            <span class="text-gray-400">1%</span>
+                            <span class="text-blue-400 font-bold text-lg">
+                              {{ calculatorForm.get("percentageValue")?.value }}%
+                            </span>
+                            <span class="text-gray-400">25%</span>
+                          </div>
+                        </div>
+
+                        <div class="text-gray-400 text-xs font-medium">
+                          Percentage of collected revenue paid to outsourcing partner
+                        </div>
+                      </div>
+
+
+
+                      <!-- Rate Recommendation -->
+                      <div class="flex items-start gap-3 p-4 bg-blue-900/10 border border-blue-500/20 rounded-xl">
+                        <div class="w-6 h-6 bg-blue-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-400">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                          </svg>
+                        </div>
+                        <div>
+                          <h6 class="text-blue-400 font-bold text-sm mb-1">Smart Recommendation</h6>
+                          <p class="text-gray-300 text-xs leading-relaxed">
+                            Most practices see optimal ROI with rates between 5-10%. Higher rates often include additional services like denial management and patient communications.
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>

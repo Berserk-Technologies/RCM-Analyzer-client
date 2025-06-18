@@ -727,5 +727,41 @@ export class CalculatorComponent implements OnInit {
     if (hasSuccess) return `${fieldName}-success`;
     return '';
   }
+
+  calculateMonthlyCost(): number {
+    const staffWages = this.calculatorForm.get('staffWages')?.value || 0;
+    const staffCount = this.calculatorForm.get('staffCount')?.value || 0;
+    const wageType = this.calculatorForm.get('wageType')?.value || 'monthly';
+
+    if (!staffWages || !staffCount) {
+      return 0;
+    }
+
+    let monthlyCost = 0;
+    const wagesPerPerson = parseFloat(staffWages.toString());
+    const numberOfStaff = parseInt(staffCount.toString());
+
+    switch (wageType) {
+      case 'hourly':
+        // Assuming 40 hours per week, 4.33 weeks per month
+        monthlyCost = wagesPerPerson * 40 * 4.33 * numberOfStaff;
+        break;
+      case 'weekly':
+        // 4.33 weeks per month
+        monthlyCost = wagesPerPerson * 4.33 * numberOfStaff;
+        break;
+      case 'monthly':
+        monthlyCost = wagesPerPerson * numberOfStaff;
+        break;
+      case 'annually':
+        // Divide by 12 months
+        monthlyCost = (wagesPerPerson / 12) * numberOfStaff;
+        break;
+      default:
+        monthlyCost = wagesPerPerson * numberOfStaff;
+    }
+
+    return Math.round(monthlyCost);
+  }
 }
 
